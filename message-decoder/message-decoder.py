@@ -34,7 +34,6 @@ def print_grid(url):
     for row in reversed(grid):
         print(''.join(row))
 
-
 # Helper function to get the datafram from a given url
 def get_data_from_url(url):
     # Fetch the document
@@ -63,7 +62,8 @@ def get_data_from_url(url):
     return df
 
 
-# A Test url which print "F":
-# DOCUMENT_URL = 'https://docs.google.com/document/d/e/2PACX-1vSHesOf9hv2sPOntssYrEdubmMQm8lwjfwv6NPjjmIRYs_FOYXtqrYgjh85jBUebK9swPXh_a5TJ5Kl/pub'
-DOCUMENT_URL = 'https://docs.google.com/document/d/e/2PACX-1vRMx5YQlZNa3ra8dYYxmv-QIQ3YJe8tbI3kqcuC7lQiZm-CSEznKfN_HYNSpoXcZIV3Y_O3YoUB1ecq/pub'
-print_grid(DOCUMENT_URL)
+# tests with 2 sample google doc urls
+DOCUMENT_URL1 = 'https://docs.google.com/document/d/e/2PACX-1vSHesOf9hv2sPOntssYrEdubmMQm8lwjfwv6NPjjmIRYs_FOYXtqrYgjh85jBUebK9swPXh_a5TJ5Kl/pub'
+DOCUMENT_URL2 = 'https://docs.google.com/document/d/e/2PACX-1vRMx5YQlZNa3ra8dYYxmv-QIQ3YJe8tbI3kqcuC7lQiZm-CSEznKfN_HYNSpoXcZIV3Y_O3YoUB1ecq/pub'
+print_grid(DOCUMENT_URL1)
+print_grid(DOCUMENT_URL2)
